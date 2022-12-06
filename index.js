@@ -23,6 +23,10 @@ const invokeAction = async ({ action, id, name, email, phone }) => {
 
     case 'getById':
       const contact = await contacts.getContactById(id);
+      if (!contact) {
+        console.warn(`\x1B[31m Contact with id=${id} not found!`);
+        break;
+      }
       console.table(contact);
       break;
 
@@ -33,6 +37,10 @@ const invokeAction = async ({ action, id, name, email, phone }) => {
 
     case 'remove':
       const removedContact = await contacts.removeContact(id);
+      if (!removedContact) {
+        console.warn(`\x1B[31m Contact with id=${id} not found!`);
+        break;
+      }
       console.table(removedContact);
       break;
 
@@ -42,13 +50,3 @@ const invokeAction = async ({ action, id, name, email, phone }) => {
 };
 
 invokeAction(argv);
-
-// invokeAction({ action: 'list' });
-// invokeAction({ action: 'getById', id: '2' });
-// invokeAction({
-//   action: 'add',
-//   name: 'dddddd',
-//   email: 'ffffffffff',
-//   phone: '+5365625565555',
-// });
-// invokeAction({ action: 'remove', id: '10' });

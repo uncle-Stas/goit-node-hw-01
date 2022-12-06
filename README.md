@@ -1,9 +1,17 @@
 # goit-node-hw-01
 
-Получаем и выводим весь список контактов https://ibb.co/M7kFHTH
+## Получаем и выводим весь список контактов
 
-Получаем контакт по id https://ibb.co/xmV2z1S
+https://ibb.co/M7kFHTH
 
-Добавляем контакт https://ibb.co/y4WFQ2R
+## Получаем контакт по id
 
-Удаляем контакт https://ibb.co/j8qGG5x
+https://ibb.co/xmV2z1S
+
+## Добавляем контакт
+
+https://ibb.co/y4WFQ2R
+
+## Удаляем контакт
+
+https://ibb.co/j8qGG5x
